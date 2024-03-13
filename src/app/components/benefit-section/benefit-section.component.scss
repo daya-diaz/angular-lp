@@ -1,0 +1,33 @@
+@import "../../../color-variables.scss";
+
+.benefit-section {
+  display: flex;
+  flex-direction: column;
+  gap: 42px;
+  align-items: center;
+  justify-content: center;
+  div {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    align-items: flex-start;
+    font-family: 'Poppins', sans-serif;
+    max-width: 609px;
+    h4 {
+      font-size: 32px;
+      color: $primary-text;
+    }
+
+    p {
+      font-size: 16px;
+      color: $secondary-text;
+      width: 100%;
+    }
+  }
+}
+
+@media (min-width: 1080px) {
+  .benefit-section {
+    flex-direction: row;
+  }
+}
